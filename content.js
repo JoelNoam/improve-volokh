@@ -14,8 +14,8 @@ function make_improvements() {
   
   for (var i = 0; i < articles.length; i++) {
     article = articles[i];
-    authorElement = article.getElementsByClassName("author-footer--author-name");
-    authorName = authorElement[0].textContent;
+    authorElement = article.getElementsByClassName("author");
+    authorName = authorElement[0].textContent.trim();
     console.log(authorName);
     if (authorName === "Josh Blackman") {
       //window.alert("found");
