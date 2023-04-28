@@ -14,7 +14,11 @@ function make_improvements() {
   
   for (var i = 0; i < articles.length; i++) {
     article = articles[i];
-    authorElement = article.getElementsByClassName("author");
+    try {
+		  authorName = authorElement[0].textContent.trim();
+	  } catch (err){
+		  continue;
+	  }
     authorName = authorElement[0].textContent.trim();
     console.log(authorName);
     if (authorName === "Josh Blackman") {
