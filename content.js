@@ -22,10 +22,5 @@
   // Initial pass
   make_improvements();
 
-  // When "More" is clicked, wait a moment and then re-run
-  const loadMoreButton = document.querySelector(".rcom-load-more-button");
-  if (loadMoreButton) {
-    loadMoreButton.onclick = () => setTimeout(make_improvements, 3000);
-  }
 
 })();
